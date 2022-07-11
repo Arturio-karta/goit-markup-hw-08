@@ -38,9 +38,9 @@ padding-left: 15px;
 outline-offset: -2px; */
 }
 .header {
-box-shadow:rgba(0, 0, 0, 0.12);
-border-radius: 4px;
-padding-bottom: 1px;
+border-bottom: 1px solid #ECECEC;
+padding-top: 24px;
+padding-bottom: 24px;
 }
 .header-container {
 display: flex;
@@ -50,8 +50,7 @@ align-items: center;
 display: flex;
 align-items: center;
 display: flex;
-padding-top: 32px;
-padding-bottom: 32px;
+
 }
 .logo { 
 margin-right: 93px;
@@ -73,11 +72,10 @@ display: flex;
 font-weight: 500;
 letter-spacing: 0.02em;
 text-decoration: none;
-
+gap: 50px;
 }
 .link, .link-current {
 display: block;
-margin-left: 50px;
 }
 .link:last-child {
 margin-right: 0;
@@ -99,14 +97,10 @@ text-decoration: none;
 .contact-bloc {
 margin-left: auto;
 display: flex;
-gap: 0px;
+gap: 50px;
 }
 .item:last-child {
-margin-right: 0;
 margin-bottom: 0; }
-.contact {
-margin-right: 50px;
-}
 .contact-bloc .contact {
 display: block;
 color: #757575;
@@ -207,15 +201,16 @@ color: #212121;
 }
 /* Особливості */
 .feature-list {
-    display: flex;
+display: flex;
+gap: 30px;
 }
 .feature-list .title {
+margin-bottom: 10px;
 font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 }
 .feature {
-margin-right:30px ;
 width: 270px;
 }
 .title .feature {
@@ -223,6 +218,9 @@ font-size: 14px;
 line-height: 1.71;
 }
 /* Чим ми займаємся */
+.section-one {
+padding-bottom: 94px;
+}
 .section-title {
 margin-bottom: 50px;
 color: #212121;
@@ -232,9 +230,7 @@ text-align: center;
 }
 .working {
 display: flex;
-}
-.work {
-margin-right: 30px;
+gap: 30px;
 }
 /* Наша команда */
 .teams {
@@ -304,12 +300,10 @@ text-decoration: none;
 .address {
 margin-top: 20px;
 }
-.footer-item {
-margin-bottom: 9px;
-}
 .contact-footer {
 font-size: 14px;
 line-height: 1.71;
+gap: 9px;
 }
 .contact-footer .contact {
 font-style: normal;
@@ -330,7 +324,7 @@ text-decoration: none;
 color: #2196F3;  
 }
 /* 2Сторінка Main */
-.main {
+.section-two {
 padding-top: 94px;
 padding-left: auto;
 padding-top: auto;
@@ -338,13 +332,11 @@ padding-bottom: 94px;
 }
 .button-two {
 display: block;
-margin-right: 8px;
 }
 .list {
-margin-right: auto;
-margin-left: auto;
-width: 611px;
+justify-content: center;;
 display: flex;
+gap: 8px;
 }
 .list-icon {
 display: flex;
@@ -362,7 +354,7 @@ padding-bottom: 20px;
 padding-left: 24px;
 padding-right: 24px;
 }
-.list .title {
+.product-wrapper .title {
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
