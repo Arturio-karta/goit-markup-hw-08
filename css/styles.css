@@ -350,10 +350,11 @@ display: flex;
 display: flex;
 flex-wrap: wrap;
 gap: 30px;
+}
+.real-work {
 flex-basis: calc((100% - 30px * 2) / 3);
 }
 .product-wrapper {
-max-width: 370px;
 border: 1px solid #EEEEEE;
 border-top: none;
 padding-top: 20px;
