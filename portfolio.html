@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
@@ -15,7 +18,8 @@
 <body>
     <!--Верхня_лінія-->
     <header class="header">
-        <nav>
+        <div class="container header-container">
+        <nav class="nav">
             <a href="" class="logo">Web<span class="span">Studio</span></a>
             <ul class="site-nav">
                 <li><a class="link" href="./index.html">Студия</a></li>
@@ -25,82 +29,91 @@
         </nav>
         <ul class="contact-bloc">
             <li><a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            <li><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contact item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         </ul>
+        </div>
     </header>
     <!--Герой-->
     <main class="main">
+        <div class="container">
         <ul class="list">
-            <li> <button class="button-current" type="button">Все</button></li>
-            <li> <button class="button" type="button">Веб-сайты</button></li>
-            <li> <button class="button" type="button">Приложения</button></li>
-            <li> <button class="button" type="button">Дизайн</button></li>
-            <li> <button class="button" type="button">Маркетинг</button></li>
+            <li class="button-two"> <button class="button-current" type="button">Все</button></li>
+            <li class="button-two"> <button class="button" type="button">Веб-сайты</button></li>
+            <li class="button-two"> <button class="button" type="button">Приложения</button></li>
+            <li class="button-two"> <button class="button" type="button">Дизайн</button></li>
+            <li class="button-two item"> <button class="button" type="button">Маркетинг</button></li>
         </ul>
         <section class="section">
             <h1 class="visually-hidden">Портфолио бизнес услуг</h1>
-            <ul class="list">
-                <li>
+            <ul class="list-icon">
+                <li class="real-work">
                     <img src="./images/aaaa.jpg" alt="Веб-сайт" width="370" height="294" />
-                    <h2 class="title">Технокряк</h2>
-                    <p class="title-product">Веб-сайт</p>
+                    <div class="product-wrapper"><h2 class="title">Технокряк</h2>
+                    <p class="title-product">Веб-сайт</p></div>
                 </li>
-                <li>
+                <li class="real-work">
                     <img src="./images/aaa1.jpg" alt="Постер NBA" width="370" height="294" />
-                    <h2 class="title">Постер<span lang="en"> New Orlean vs Golden Star</span></h2>
-                    <p class="title-product">Дизайн</p>
+                    <div class="product-wrapper"><h2 class="title">Постер<span lang="en"> New Orlean vs Golden Star</span></h2>
+                    <p class="title-product">Дизайн</p></div>
                 </li>
-                <li>
+                <li class="real-work">
                     <img src="./images/aaaa2.jpg" alt="логотип Seafood" width="370" height="294" />
-                    <h2 class="title">Ресторан<span lang="en">Seafood</span></h2>
-                    <p class="title-product">Приложение</p>
+                    <div class="product-wrapper"><h2 class="title">Ресторан<span lang="en">Seafood</span></h2>
+                    <p class="title-product">Приложение</p></div>
                 </li>
-                <li>
+                <li class="real-work">
                     <img src="./images/aaa3.jpg" alt="Наушники" width="370" height="294" />
-                    <h2 class="title">Проект<span lang="en">Prime</span></h2>
-                    <p class="title-product">Маркетинг</p>
+                    <div class="product-wrapper"><h2 class="title">Проект<span lang="en">Prime</span></h2>
+                    <p class="title-product">Маркетинг</p></div>
                 </li>
-                <li>
+                <li class="real-work">
                     <img src="./images/aaa4.jpg" alt="Коробка" width="370" height="294" />
-                    <h2 class="title">Проект<span lang="en">Boxes</span></h2>
-                    <p class="title-product">Приложение</p>
+                    <div class="product-wrapper"><h2 class="title">Проект<span lang="en">Boxes</span></h2>
+                    <p class="title-product">Приложение</p></div>
                 </li>
-                <li>
+                <li class="real-work">
                     <img src="./images/aaa5.jpg" alt="Веб-сайт" width="370" height="294" />
-                    <h2 class="title" lang="en">Inspiration has no Borders</h2>
-                    <p class="title-product">Веб-сайт</p>
+                    <div class="product-wrapper"><h2 class="title" lang="en">Inspiration has no Borders</h2>
+                    <p class="title-product">Веб-сайт</p></div>
                 </li>
-                <li>
+                <li class="real-work">
                     <img src="./images/aaa6.jpg" alt="Книга" width="370" height="294" />
-
-                    <h2 class="title">Издание<span lang="en">Limited Edition</span></h2>
-                    <p class="title-product">Дизайн</p>
+                    <div class="product-wrapper"><h2 class="title">Издание<span lang="en">Limited Edition</span></h2>
+                    <p class="title-product">Дизайн</p></div>
                 </li>
-                <li>
+                <li class="real-work">
                     <img src="./images/aaa7.jpg" alt="Купон Lab el tag" width="370" height="294" />
-                    <h2 class="title">Проект<span lang="en">LAB</span></h2>
-                    <p class="title-product">Маркетинг</p>
+                    <div class="product-wrapper"><h2 class="title">Проект<span lang="en">LAB</span></h2>
+                    <p class="title-product">Маркетинг</p></div>
                 </li>
-                <li><img src="./images/aaa8.jpg" alt="Ноутбук" />
-                    <h2 class="title" lang="en">Growing Business</h2>
-                    <p class="title-product">Приложение</p>
+                <li class="real-work"><img src="./images/aaa8.jpg" alt="Ноутбук" />
+                    <div class="product-wrapper"><h2 class="title" lang="en">Growing Business</h2>
+                    <p class="title-product">Приложение</p></div>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <!--Підвал-->
     <footer class="footer">
-        <a href="" class="logo-footer">Web<span class="span-footer">Studio</span></a>
-        <address>
+        <div class="container">
+          <a href="" class="logo-footer">Web<span class="span-footer">Studio</span></a>
+          <address class="address">
             <ul class="contact-footer">
-                <li><a class="link-map" href="https://goo.gl/maps/sx9XBkgbLeAh2KCX8" target="_blank"
-                        rel="noopener noreferrer">г. Киев,
-                        пр-т Леси Украинки, 26</a></li>
-                <li><a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                <li> <a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li class="footer-item">
+                <a class="link-map" href="https://goo.gl/maps/sx9XBkgbLeAh2KCX8" target="_blank"
+                  rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+              <li class="footer-item">
+                <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li class="footer-item item">
+                <a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
             </ul>
-        </address>
-    </footer>
+          </address>
+        </div>
+      </footer>
 </body>
 
 </html>
