@@ -130,6 +130,7 @@ text-transform: uppercase;
 }
 /* button */
 button {
+border: none;
 min-height: 38px;
 min-width: 73px;
 background-color: var(--secondary-backgruond-color);
@@ -303,6 +304,8 @@ margin-top: 20px;
 .contact-footer {
 font-size: 14px;
 line-height: 1.71;
+display: flex;
+flex-direction: column;
 gap: 9px;
 }
 .contact-footer .contact {
@@ -334,6 +337,7 @@ padding-bottom: 94px;
 display: block;
 }
 .list {
+margin-bottom: 50px;
 justify-content: center;;
 display: flex;
 gap: 8px;
