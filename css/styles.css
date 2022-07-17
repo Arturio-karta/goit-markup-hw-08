@@ -77,6 +77,14 @@ gap: 50px;
 .link, .link-current {
 display: block;
 }
+.link-current::after {
+/* content: "";
+display: block;
+width: 100%;
+height: 4px;
+border-radius: 2px;
+background-color: #2196F3; */
+}
 .link:last-child {
 margin-right: 0;
 }
@@ -95,6 +103,7 @@ color: #2196f3;
 text-decoration: none;
 }
 .contact-bloc {
+display: flex;
 margin-left: auto;
 display: flex;
 gap: 50px;
@@ -102,7 +111,6 @@ gap: 50px;
 .item:last-child {
 margin-bottom: 0; }
 .contact-bloc .contact {
-display: block;
 color: #757575;
 text-decoration: none;
 font-weight: 500;
@@ -111,10 +119,23 @@ letter-spacing: 0.02em;
 .contact-bloc .contact:hover, .contact-bloc .contact:focus {
 color: #2196F3;   
 }
-
+.contact-icon {
+align-items: center;
+fill: currentColor;
+margin-right: 10px;
+}
 /* Герой */
 .hero {
-background-color: #2F303A;
+background-position: center;
+max-width: 1600px;
+min-height: 600px;
+background-size: cover;
+background-repeat: no-repeat;
+margin-left: auto;
+margin-right: auto;
+background-color: #C4C4C4;
+background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url('/images/fon.jpg');
 padding-top: 200px;
 padding-bottom: 200px;
 } 
@@ -201,6 +222,16 @@ overflow: hidden;
 color: #212121;
 }
 /* Особливості */
+.thumb {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 270px;
+height: 120px;
+background-color: #F5F4FA;
+border-radius: 4px;
+margin-bottom: 30px;
+}
 .feature-list {
 display: flex;
 gap: 30px;
@@ -249,6 +280,7 @@ margin-right: 0;
 .team-wrapper {
 box-shadow: rgba(0, 0, 0, 0.12);
 border-radius: 0px 0px 4px 4px;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-top: none;
 padding-top: 30px;
 padding-bottom: 30px;
@@ -280,12 +312,80 @@ background-color: #F5F4FA;
 .team-icon {
 background-color: #FFFFFF;
 }
+/* Соціаотеі мережі */
+.social {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+.social-team {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+background-color: #FFFFFF;
+border-radius: 50%;
+color: #AFB1B8;
+/* outline: 2px solid red;
+outline-offset: -2px; */
+}
+.social-team:hover, .social-team:focus {
+background-color: #2196F3;
+color: #FFFFFF;
+}
+.social-icon {
+fill: currentColor
+}
+/* Постійні клієнти  */
+.section-icon {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+.company-items {
+display: flex;
+justify-content: space-evenly;
+}
+.company {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 170px;
+height: 92px;
+background-color: #FFFFFF;
+border-radius: 4px;
+gap: 30px;
+margin-bottom: 30px;
+color: #AFB1B8;
+border: 1px solid rgba(175, 177, 184, 1);
+}
+.company:hover, .company:focus {
+color: rgba(33, 150, 243, 1);
+border: 1px solid rgba(33, 150, 243, 1);;
+}
+.company-icon {
+fill: currentColor}
 /* footer */
-footer {
-display: block;
+.footer-contact {
+align-items: baseline;
+display: flex;
 padding-top: 60px;
 padding-bottom: 60px;
 background-color: #2F303A;
+}
+.footer-one {
+display: flex;
+flex-direction: column;
+}
+.footer-two {
+align-items: baseline;
+display: flex;
+flex-direction: column;
+}
+.footer-address {
+display: flex;
+flex-direction: column;
 }
 .logo-footer {
 color: #2196F3;
@@ -296,9 +396,11 @@ line-height: 1.19;
 text-decoration: none;
 }
 .logo-footer .span-footer {
-    color: #FFFFFF;
+color: #FFFFFF;
 }
 .address {
+display: flex;
+flex-direction: column;
 margin-top: 20px;
 }
 .contact-footer {
@@ -326,6 +428,34 @@ text-decoration: none;
 .contact-footer .link-map:hover, .contact-footer .link-map:focus {
 color: #2196F3;  
 }
+.social-links {
+color: #FFFFFF;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+.social-footer {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+.social-team-footer {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+color: #FFFFFF;
+}
+.social-team-footer:hover, .social-team-footer:focus {
+background-color: #2196F3;
+}
 /* 2Сторінка Main */
 .section-two {
 padding-top: 94px;
@@ -349,6 +479,9 @@ gap: 30px;
 }
 .real-work {
 flex-basis: calc((100% - 30px * 2) / 3);
+}
+.work-link {
+
 }
 .product-wrapper {
 border: 1px solid #EEEEEE;
