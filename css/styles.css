@@ -370,12 +370,14 @@ border: 1px solid rgba(33, 150, 243, 1);;
 .company-icon {
 fill: currentColor}
 /* footer */
-.footer-contact {
-align-items: baseline;
-display: flex;
+.footer {
 padding-top: 60px;
 padding-bottom: 60px;
 background-color: #2F303A;
+}
+.footer-contact {
+align-items: baseline;
+display: flex;
 }
 .footer-one {
 margin-right: 70px;
@@ -478,7 +480,7 @@ gap: 30px;
 display: block;
 flex-basis: calc((100% - 30px * 2) / 3);
 }
-.real-work:hover {
+.real-work:hover, .real-work:focus {
 border-radius: 4px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
