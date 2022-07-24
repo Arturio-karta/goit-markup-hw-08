@@ -88,7 +88,10 @@ transform: translate(-50%, -50%);
 height: 4px;
 border-radius: 2px;
 background-color: #2196F3;
-}
+transition: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;}
 .link-current:hover::after {
 opacity: 1;
 }
@@ -100,7 +103,10 @@ color: #212121;
 font-weight: 500;
 letter-spacing: 0.02em;
 text-decoration: none;
-}
+transform: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;}
 .site-nav .link:hover, .site-nav .link:focus {
 color: #2196F3;
 }
@@ -123,6 +129,10 @@ font-weight: 500;
 letter-spacing: 0.02em;
 display: flex;
 align-items: center;
+transition: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;
 }
 .contact-bloc .contact:hover, .contact-bloc .contact:focus {
 color: #2196F3;   
@@ -141,10 +151,16 @@ height: 100%;
 background-color: rgba(0, 0, 0, 0.2);
 padding-bottom: 221px;
 z-index: 100;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;
 }
 .backdrop.is-hidden {
+pointer-events: none;
 opacity: 0;
 pointer-events: none;
+visibility: hidden;
+
 }
 .modal {
 position: absolute;
@@ -156,6 +172,10 @@ transform: translate(-50%, -50%);
 min-width: 528px;
 min-height: 581px;
 background-color: var(--premary-white-color);
+
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;
 }
 .button-x {
 position: absolute;
@@ -223,7 +243,11 @@ background-color: var(--accent-color);
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
-letter-spacing: 0.06em;  
+letter-spacing: 0.06em;
+transition: backgruond-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;
 }
 .button-one:hover, .button-one:focus {
 background-color: var(--accent-shadow-color);
@@ -239,6 +263,10 @@ background-color: var(--accent-color);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
+transition: backgruond-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;
 }
 .button:hover, button:focus {
 color: var(--premary-white-color);
@@ -406,6 +434,10 @@ height: 44px;
 background-color: #FFFFFF;
 border-radius: 50%;
 color: #AFB1B8;
+transition: backgruond-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;
 /* outline: 2px solid red;
 outline-offset: -2px; */
 }
@@ -436,6 +468,10 @@ border-radius: 4px;
 gap: 30px;
 color: #AFB1B8;
 border: 1px solid rgba(175, 177, 184, 1);
+transition: backgruond-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;
 }
 .company:hover, .company:focus {
 color: rgba(33, 150, 243, 1);
@@ -483,6 +519,10 @@ gap: 9px;
 font-style: normal;
 color: rgba(255, 255, 255, 0.6);
 text-decoration: none;
+transition: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;
 }
 .contact-footer .contact:hover, .contact-footer .contact:focus {
 color: #2196F3;    
@@ -521,6 +561,10 @@ height: 44px;
 background-color: rgba(255, 255, 255, 0.1);
 border-radius: 50%;
 color: #FFFFFF;
+transition: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;
 }
 .social-team-footer:hover, .social-team-footer:focus {
 background-color: #2196F3;
@@ -534,6 +578,10 @@ padding-bottom: 94px;
 }
 .button-two {
 display: block;
+transition: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;
 }
 .button-two:hover, .button-two:focus {
 border-radius: 4px;
