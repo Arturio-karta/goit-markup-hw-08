@@ -151,7 +151,7 @@ height: 100%;
 background-color: rgba(0, 0, 0, 0.2);
 padding-bottom: 221px;
 z-index: 100;
-transition-property: opacity visibility;
+transition-property: opacity,visibility;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;
@@ -226,14 +226,16 @@ text-transform: uppercase;
 .base-btn {
 border-radius: 4px;
 border: none;
-min-height: 38px;
-min-width: 73px;
+padding-top: 6px;
+padding-right: 22px;
+padding-bottom: 6px;
+padding-left: 22px;
 background-color: var(--secondary-backgruond-color);
 font-family: inherit;
 cursor: pointer;
 color: var(--title-text-color);
 
-transition-property: color backgruond-color border-radius;
+transition-property: color,backgruond-color,box-shadow;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;
@@ -440,7 +442,7 @@ height: 44px;
 background-color: #FFFFFF;
 border-radius: 50%;
 color: #AFB1B8;
-transition-property: color backgruond-color;
+transition-property: color,backgruond-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;
@@ -474,7 +476,7 @@ border-radius: 4px;
 gap: 30px;
 color: #AFB1B8;
 border: 1px solid rgba(175, 177, 184, 1);
-transition-property: border-color color;
+transition-property: border-color,color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;
@@ -584,7 +586,7 @@ padding-bottom: 94px;
 }
 .button-two {
 display: block;
-transition-property: color border-radius;
+transition-property: color,box-shadow;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;
@@ -605,40 +607,38 @@ flex-wrap: wrap;
 gap: 30px;
 }
 .real-work {
-position: relative;
 flex-basis: calc((100% - 30px * 2) / 3);
+display: block;
+transition-property: color,box-shadow;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;
 }
 .real-work:hover, .real-work:focus {
 border-radius: 4px;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .product-img {
 position: relative;
-
+overflow: hidden;
 }
 .overlay {
 position: absolute;
 background-color: rgba(33, 150, 243, 0.9);
 left: 0;
-top: 0;
+top: 100%;
 width: 100%;
 height: 100%;
-opacity: 0;
+transform: translateY(0);
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-overflow: hidden;
 }
-.real-work:hover .overlay {
-opacity: 1;
-}
-.real-work:hover .project-img {
-opacity: 1;
+.real-work:hover .overlay,
+.real-work:focus .overlay {
+transform: translateY(-100%);
 }
 .product-action {
-opacity: 0;
-position: absolute;
-width: 100%;
-height: 100%;
+padding-bottom: 63px;
 padding-left: 24px;
 padding-right: 24px;
 padding-top: 63px;
@@ -650,9 +650,6 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;
 color: #FFFFFF;
-}
-.real-work:hover .product-action {
-opacity: 1;
 }
 .product-wrapper {
 border: 1px solid #EEEEEE;
