@@ -621,7 +621,6 @@ ul {
 }
 
 .team-wrapper {
-    box-shadow: rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -892,13 +891,11 @@ padding-left: 28px;
 padding-right: 28px;
 }
 .footer-icon {
-margin-left: 10pxМ;
+margin-left: 10px;
 }
 /* 2Сторінка Main */
 .section-two {
     padding-top: 94px;
-    padding-left: auto;
-    padding-top: auto;
     padding-bottom: 94px;
 }
 
