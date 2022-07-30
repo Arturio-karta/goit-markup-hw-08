@@ -227,8 +227,14 @@ outline-offset: -2px; */
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button-x:hover, .button-x:focus {
+fill: var(--accent-color);
+}
 .button-icon {
     justify-content: center;
     text-align: center;
@@ -291,8 +297,13 @@ outline-offset: -2px; */
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.register-form-input:focus-within, .register-form-input:hover, .register-form-message:focus-within, .register-form-message:hover {
+border: 1px solid var(--accent-color);
+}
 .register-form-message {
     padding: 12px;
     padding-left: 16px;
@@ -305,8 +316,17 @@ outline-offset: -2px; */
     position: absolute;
     bottom: 11px;
     left: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.fill {
+opacity: 0;
+}
+.register-form-input:focus-within + .register-form-icon,
+.register-form-input:hover + .register-form-icon {
+fill: var(--accent-color);
+}
 .register-form-agreement {
     display: flex;
     align-items: center;
@@ -464,7 +484,7 @@ outline-offset: -2px; */
 }
 
 .button:hover,
-button:focus {
+.button:focus {
     color: var(--premary-white-color);
     background-color: var(--accent-color);
 }
