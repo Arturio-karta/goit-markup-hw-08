@@ -1,0 +1,20 @@
+.section-two {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__button-two {
+        display: block;
+        transition: color, box-shadow var(--primary-transition);
+        overflow: hidden;
+        &:hover,
+&:focus {
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+    }
+}
+.list {
+    margin-bottom: 50px;
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+}

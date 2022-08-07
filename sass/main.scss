@@ -1,0 +1,44 @@
+// base styles
+@import './base/base';
+@import './base/reset';
+
+// components styles
+@import "./components/buttons";
+@import "./components/card-set";
+@import "./components/section";
+@import "./components/container";
+@import "./components/title";
+@import "./components/modal-form";
+@import "./components/footer-form";
+@import "./components/modal-window";
+@import "./components/social";
+
+
+
+// замінили на mixin
+// @import './components/section';
+
+
+// layout styles
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/hero";
+@import "./layout/contacts";
+@import "./layout/portfolio";
+@import "./layout/footer";
+@import "./layout/work";
+@import "./layout/features";
+@import "./layout/teams";
+@import "./layout/client";
+
+
+
+
+
+// utils styles
+@import './utils/variables';
+@import "./utils/visually-hidden";
+@import "./utils/mixins";
+
+
+

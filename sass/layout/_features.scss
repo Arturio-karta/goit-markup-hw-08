@@ -1,0 +1,19 @@
+.thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.feature-list {
+    display: flex;
+    gap: 30px;
+    &_text {
+        width: 270px;
+    }
+}
+

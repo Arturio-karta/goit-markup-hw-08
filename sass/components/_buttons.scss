@@ -1,0 +1,55 @@
+.base-btn {
+    border-radius: 4px;
+    border: none;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    background-color: var(--secondary-backgruond-color);
+    font-family: inherit;
+    cursor: pointer;
+    color: var(--title-text-color);
+    transition: color, background-color, box-shadow var(--primary-transition);
+    overflow: hidden;
+}
+
+.button-one {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    color: var(--premary-white-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    transition: background-color var(--primary-transition);
+    overflow: hidden;
+    &:hover,
+&:focus {
+    background-color: var(--accent-shadow-color);
+}
+}
+
+
+.button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    &:hover,
+&:focus {
+    color: var(--premary-white-color);
+    background-color: var(--accent-color);
+}
+}
+
+.button-current {
+    color: var(--premary-white-color);
+    background-color: var(--accent-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    transition: background-color var(--primary-transition);
+    overflow: hidden;
+}
