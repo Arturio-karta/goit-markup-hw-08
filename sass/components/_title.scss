@@ -1,14 +1,6 @@
 .title {
     color: #212121;
 }
-.feature-list_title {
-    font-size: 14px;
-    line-height: 1.71;
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-}
 .register-form-title {
     display: block;
     margin-bottom: 12px;
@@ -26,11 +18,24 @@
     margin-bottom: 30px;
     color: var(--premary-white-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+  
+    @media screen and (min-width: 480px) {
+        max-width: 360px;
+        max-height: 84px;
+        font-size: 26px;
+        line-height: 42px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+          font-size: 44px;
+    line-height: 1.36;
+    margin-bottom: 60px;
+    }
 }
 .section-one__title {
     margin-bottom: 50px;

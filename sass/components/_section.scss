@@ -1,16 +1,36 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and  (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;    
+    }
+  
 }
 .section-one {
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+        padding-bottom: 94px;    
+    }
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 .section-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #f5f4fa;
+    @media screen and  (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 .section-icon {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and  (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;    
+        
+    }
 }

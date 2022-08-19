@@ -1,9 +1,18 @@
 .header {
     border-bottom: 1px solid #ececec;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    @media screen and (min-width: 480px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    @media screen and (min-width: 780px) {
+        padding-top: 21px;
+        padding-bottom: 20px;
+        }
+        @media screen and (min-width: 1200px) {
+            padding-top: 24px;
+            padding-bottom: 24px;
+            }
 }
-
 .header-container {
     display: flex;
     align-items: center;
