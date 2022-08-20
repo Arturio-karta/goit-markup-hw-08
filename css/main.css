@@ -364,10 +364,10 @@ ul {
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 480px) {
   .section__title {
-    margin-bottom: 30px;
     font-size: 28px;
     line-height: 1.1785714286;
   }
@@ -851,6 +851,7 @@ ul {
 }
 
 .menu-button {
+  position: absolute;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -868,6 +869,8 @@ ul {
   height: 40px;
   padding: 0;
   cursor: pointer;
+  margin-right: auto;
+  right: 10px;
 }
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -1048,11 +1051,6 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-}
-@media screen and (min-width: 480px) {
-  .nav__logo {
-    margin-right: 276px;
-  }
 }
 @media screen and (min-width: 768px) {
   .nav__logo {
@@ -1390,11 +1388,9 @@ ul {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-@media screen and (min-width: 480px) {
-  .footer-contact {
-    display: block;
-    text-align: center;
-  }
+.footer-contact {
+  display: block;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .footer-contact {
@@ -1425,12 +1421,8 @@ ul {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-decoration: none;
-}
-@media screen and (min-width: 480px) {
-  .footer__logo-footer {
-    font-size: 24px;
-    line-height: 1.1666666667;
-  }
+  font-size: 24px;
+  line-height: 1.1666666667;
 }
 @media screen and (min-width: 1200px) {
   .footer__logo-footer {
@@ -1487,11 +1479,15 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .thumb {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .thumb {
@@ -1621,6 +1617,12 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .company__item {
   display: -webkit-box;
@@ -1643,11 +1645,7 @@ ul {
   -webkit-transition: color, border-color var(--primary-transition);
   transition: color, border-color var(--primary-transition);
   overflow: hidden;
-}
-@media screen and (min-width: 480px) {
-  .company__item {
-    width: 210px;
-  }
+  width: 210px;
 }
 @media screen and (min-width: 768px) {
   .company__item {

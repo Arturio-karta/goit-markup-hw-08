@@ -2,6 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    align-items: center;
+        justify-content: center;
     &__item {
         display: flex;
         align-items: center;
@@ -15,9 +17,7 @@
         transition-property: border-color, color;
         transition: color, border-color var(--primary-transition);
         overflow: hidden;
-        @media screen and (min-width: 480px) {
             width: 210px;
-        }
         @media screen and (min-width: 768px) {
             width: 226px;
         }
