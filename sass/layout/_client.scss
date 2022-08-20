@@ -1,11 +1,11 @@
 .company {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
     &__item {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 170px;
         height: 92px;
         background-color: var(--premary-white-color);
         border-radius: 4px;
@@ -15,6 +15,15 @@
         transition-property: border-color, color;
         transition: color, border-color var(--primary-transition);
         overflow: hidden;
+        @media screen and (min-width: 480px) {
+            width: 210px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 226px;
+        }
+        @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
         &:hover,
 &:focus {
     color: rgba(33, 150, 243, 1);

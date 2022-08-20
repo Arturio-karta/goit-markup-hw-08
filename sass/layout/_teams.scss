@@ -4,22 +4,20 @@
     gap: 30px;
     margin-top: 0;
     margin-bottom: 0;
-    @media screen and (min-width: 480px){
-    }
-    @media screen and (min-width: 768px){
-    }
-    @media screen and (min-width: 768px) {
-    }
     &__icon {
-    
+    width: 450px;
         background-color: var(--premary-white-color);
         text-align: center;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
-        // &:last-child {
-        //     margin-right: 0;
-        // }
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
     }
     
 }

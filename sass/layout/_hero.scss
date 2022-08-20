@@ -1,39 +1,52 @@
 .hero {
+    display: block;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #c4c4c4;
     @media screen and (min-width: 480px) {
       max-width: 480px;
-      max-height: 400px;
+      padding-top: 118px;
+      padding-bottom: 118px;
       background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-          url("../images/fon.jpg");
-      padding-top: 118px;
-      padding-bottom: 118px;
+      url("../images/hero/w/Header imghero-480.jpg");
+      @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url("../images/hero/w/Header imghero-960.jpg");
     }
     @media screen and (min-width: 768px) {
         max-width: 768px;
-        max-height: 400px;
+        padding-top: 118px;
+        padding-bottom: 118px;
         background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-            url("../images/fon.jpg");
-        padding-top: 118px;
-        padding-bottom: 118px;
+            url("../images/hero/w/Header imghero-768.jpg");
+            @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url("../images/hero/w/Header imghero-1536.jpg");
+    }
       }
     @media screen and (min-width: 1200px) {
          max-width: 1600px;
-    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
         background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url("../images/fon.jpg");
-    padding-top: 200px;
-    padding-bottom: 200px;
-    
+        url("../images/hero/w/Imghero-1600.jpg");
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url("../images/hero/w/Imghero-3200.jpg");
+          }
     }
+}
+}
+.hero__container {
+    align-items: center;
 }

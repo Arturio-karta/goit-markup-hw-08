@@ -86,11 +86,11 @@
       </ul>
     </div>
   </header>
-  <!--Герой-->
+  <!--hero-->
   <main>
     <section class="hero">
-      <div class="container">
-        <h1 class="hero__title">Еффективні рішення для&nbsp;вашого бізнесу</h1>
+      <div class="container hero__container">
+        <h1 class="hero__title">Еффективні рішення для вашого бізнесу</h1>
         <button data-modal-open class="button-one base-btn" type="button">Замовити послугу</button>
         <!-- Модальне Вікно -->
         <div class="backdrop is-hidden" data-modal>
@@ -208,19 +208,35 @@
             <div class="work__icon">
               <p class="work__app">Десктопні додатки</p>
             </div>
-            <img src="./images/img.jpg" alt="programmer" width="370" />
+            <img 
+            srcset="
+            ./images/img-work-1-370.jpg 370w,
+            ./images/img-work-1-370.jpg 740w,
+            "
+            src="./images/img-work-1-370.jpg" alt="programmer" width="370"
+            sizes="(min-width: 1200px) 370px"/>
           </li>
           <li>
             <div class="work__icon">
               <p class="work__app">Мобільні додатки</p>
             </div>
-            <img src="./images/img2.jpg" alt="programmer" width="370" />
+            <img srcset="
+            ./images/img-work-2-370.jpg 370w,
+            ./images/img-work-2-370.jpg 740w,
+            "
+            src="./images/img-work-2-370.jpg" alt="programmer" width="370"
+            sizes="(min-width: 1200px) 370px"/>
           </li>
           <li>
             <div class="work__icon">
               <p class="work__app">Дизайнерські рішення</p>
             </div>
-            <img src="./images/img3.jpg" alt="programmer" width="370" />
+            <img srcset="
+            ./images/img-work-3-370.jpg 370w,
+            ./images/img-work-3-370.jpg 740w,
+            "
+            src="./images/img-work-3-370.jpg" alt="programmer" width="370"
+            sizes="(min-width: 1200px) 370px"/>
           </li>
         </ul>
       </div>
@@ -355,38 +371,35 @@
           src="./images/team/w/img-team-4-270.jpg"
           width="450"
           height="260" alt="people"/>
-            <div class="team-wrapper">
-              <h3 class="team-wrapper__title title">Михаил Ермаков</h3>
-              <p class="team-wrapper__product" lang="en">UI Designer</p>
-              <ul class="social">
-                <li class="social__item"><a class="social__team" href="" target="_blank" rel="noopener noreferrer"
-                    aria-label="instagram">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg></a></li>
-                <li class="social__item"><a class="social-team" href="" target="_blank" rel="noopener noreferrer"
-                    aria-label="instagram">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg></a></li>
-                <li class="social__item"><a class="social-team" href="" target="_blank" rel="noopener noreferrer"
-                    aria-label="instagram">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg></a></li>
-                <li class="social__item"><a class="social-team" href="" target="_blank" rel="noopener noreferrer"
-                    aria-label="instagram">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg></a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+          <div class="team-wrapper">
+            <h3 class="team-wrapper__title title">Николай Тарасов</h3>
+            <p class="team-wrapper__product" lang="en">Marketing</p>
+            <ul class="social">
+              <li class="social__item"><a class="social__team" href="" target="_blank" rel="noopener noreferrer"
+                  aria-label="instagram">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg></a></li>
+              <li><a class="social__team" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg></a></li>
+              <li><a class="social__team" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg></a></li>
+              <li><a class="social__team" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
     <!-- Постійні клієнти -->
-    <!-- <section class="section-icon">
+    <section class="section-icon">
       <div class="container">
         <h2 class="section__title title">Постійні клієнти</h2>
         <ul class="company">
@@ -416,23 +429,23 @@
               </svg></a></li>
         </ul>
       </div>
-    </section> -->
+    </section>
   </main>
   <!--Підвал-->
   <footer class="footer">
-    <!-- <div class="container footer-contact">
+    <div class="container footer-contact">
       <div class="footer-one">
         <a href="" class="footer__logo-footer">Web<span class="footer__span-footer">Studio</span></a>
         <address class="address">
           <ul class="contact-footer">
-            <li class="">
+            <li>
               <a class="contact-footer__link-map" href="https://goo.gl/maps/sx9XBkgbLeAh2KCX8" target="_blank"
                 rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
             </li>
-            <li class="">
+            <li>
               <a class="contact-footer__contact" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
-            <li class="">
+            <li>
               <a class="contact-footer__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
           </ul>
@@ -464,7 +477,7 @@
         </ul>
       </div>
       <!-- Footer form -->
-      <!-- <form class="footer-three">
+      <form class="footer-three">
         <h4 class="footer-three_text">Підпишіться на розсилку</h4>
         <span class="footer-wrp">
           <label class="footer-label">
@@ -477,7 +490,7 @@
             </svg>
           </button>
         </span>
-      </form> -->
+      </form>
     </div> -->
   </footer>
   <script src="./js/modal.js"></script>

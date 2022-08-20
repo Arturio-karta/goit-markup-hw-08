@@ -1,6 +1,10 @@
 .section-two {
-    padding-top: 94px;
-    padding-bottom: 94px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     &__button-two {
         display: block;
         transition: color, box-shadow var(--primary-transition);
@@ -13,8 +17,16 @@
     }
 }
 .list {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     justify-content: center;
     display: flex;
-    gap: 8px;
+    gap: 15px 8px;
+    flex-wrap: wrap;
+    @media screen and (min-width: 480px) {
+       justify-content: left;
+    }
+    @media screen and (min-width: 768px) {
+        gap: 8px;
+        justify-content: center;
+     }
 }
