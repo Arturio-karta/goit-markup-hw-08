@@ -575,11 +575,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
-@media screen and (min-width: 480px) {
-  .footer-three_text {
-    margin-top: 60px;
-  }
+  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer-three_text {
@@ -604,7 +600,7 @@ ul {
 
 .footer-label {
   display: block;
-  text-align: left;
+  text-align: center;
 }
 .footer-label__input {
   background-color: #2F303A;
@@ -797,12 +793,8 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
-@media screen and (min-width: 480px) {
-  .footer-two__social-links {
-    margin-top: 60px;
-    text-align: center;
-  }
+  margin-top: 60px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .footer-two__social-links {
@@ -1005,12 +997,8 @@ ul {
 
 .header {
   border-bottom: 1px solid #ececec;
-}
-@media screen and (min-width: 480px) {
-  .header {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 @media screen and (min-width: 780px) {
   .header {
@@ -1274,11 +1262,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-@media screen and (min-width: 480px) {
-  .contact-footer {
-    gap: 8px;
-  }
+  gap: 8px;
 }
 @media screen and (min-width: 1200px) {
   .contact-footer {
@@ -1292,12 +1276,8 @@ ul {
   -webkit-transition: color var(--primary-transition);
   transition: color var(--primary-transition);
   overflow: hidden;
-}
-@media screen and (min-width: 480px) {
-  .contact-footer__contact {
-    font-size: 14px;
-    line-height: 1.7142857143;
-  }
+  font-size: 14px;
+  line-height: 1.7142857143;
 }
 @media screen and (min-width: 1200px) {
   .contact-footer__contact {
@@ -1312,13 +1292,9 @@ ul {
   color: var(--premary-white-color);
   font-style: normal;
   text-decoration: none;
-}
-@media screen and (min-width: 480px) {
-  .contact-footer__link-map {
-    font-size: 14px;
-    line-height: 1.7142857143;
-    letter-spacing: 0.03em;
-  }
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
 }
 @media screen and (min-width: 1200px) {
   .contact-footer__link-map {
@@ -1527,28 +1503,22 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-}
-@media screen and (min-width: 480px) {
-  .feature-list__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .feature-list__title {
     display: block;
   }
 }
-@media screen and (min-width: 480px) {
-  .feature-list_text {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    max-width: 450px;
-  }
+.feature-list_text {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .feature-list_text {

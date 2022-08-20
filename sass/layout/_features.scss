@@ -35,10 +35,8 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    @media screen and (min-width: 480px) {
         display: flex;
         justify-content: center;
-    }
     @media screen and (min-width: 768px) {
         display: block;
       }
@@ -46,11 +44,9 @@
     &_text {
         
         // width: 270px;
-        @media screen and (min-width: 480px) {
             margin-top: 10px;
         margin-bottom: 30px;
         max-width: 450px;
-        }
         @media screen and (min-width: 768px) {
            max-width: 354px;
         }
