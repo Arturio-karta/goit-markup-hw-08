@@ -26,14 +26,12 @@
     color: var(--premary-white-color);
     font-weight: 900;
     text-align: center;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   
     @media screen and (min-width: 480px) {
-        max-width: 360px;
         max-height: 84px;
         font-size: 26px;
         line-height: 42px;
