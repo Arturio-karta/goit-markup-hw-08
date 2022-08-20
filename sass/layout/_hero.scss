@@ -4,8 +4,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #c4c4c4;
-    @media screen and (min-width: 480px) {
-      max-width: 480px;
       padding-top: 118px;
       padding-bottom: 118px;
       background-image: linear-gradient(to right,
@@ -18,7 +16,6 @@
     background-image: url("../images/hero/w/Header imghero-960.jpg");
     }
     @media screen and (min-width: 768px) {
-        max-width: 768px;
         padding-top: 118px;
         padding-bottom: 118px;
         background-image: linear-gradient(to right,
@@ -30,7 +27,6 @@
   (min-resolution: 2dppx) {
     background-image: url("../images/hero/w/Header imghero-1536.jpg");
     }
-      }
     @media screen and (min-width: 1200px) {
          max-width: 1600px;
     padding-top: 200px;
