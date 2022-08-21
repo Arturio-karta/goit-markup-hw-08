@@ -558,15 +558,11 @@ ul {
 .footer-three {
   display: block;
   margin-left: 0;
-}
-@media screen and (min-width: 768px) {
-  .footer-three {
-    margin-left: 166px;
-  }
+  margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer-three {
-    margin-left: 93px;
+    margin-top: 0;
   }
 }
 .footer-three_text {
@@ -577,16 +573,10 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-top: 60px;
-}
-@media screen and (min-width: 768px) {
-  .footer-three_text {
-    text-align: center;
-  }
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .footer-three_text {
-    margin-top: 0;
     text-align: left;
   }
 }
@@ -1249,17 +1239,6 @@ ul {
           flex-direction: column;
   margin-top: 20px;
 }
-@media screen and (min-width: 768px) {
-  .address {
-    margin-right: 165px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .address {
-    margin-right: 0;
-  }
-}
-
 .contact-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1269,6 +1248,16 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .contact-footer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contact-footer {
@@ -1371,23 +1360,34 @@ ul {
   background-color: #2f303a;
 }
 .footer-contact {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .footer-contact {
-    text-align: left;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 @media screen and (min-width: 768px) {
   .footer-one {
     text-align: left;
-    margin-left: 76px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1405,6 +1405,17 @@ ul {
   text-decoration: none;
   font-size: 24px;
   line-height: 1.1666666667;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo-footer {
+    display: block;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__logo-footer {
@@ -1493,40 +1504,41 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .feature-list__title {
-    margin-left: 0;
-    margin-right: 0;
+    text-align: left;
   }
 }
-@media screen and (min-width: 768px) {
-  .feature-list__text {
-    max-width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .feature-list__text {
-    max-width: 270px;
-  }
-}
-.feature-list__icon {
+.feature-list__title__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   max-width: 450px;
 }
 @media screen and (min-width: 768px) {
-  .feature-list__icon {
+  .feature-list__title__icon {
     max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .feature-list__icon {
+  .feature-list__title__icon {
+    max-width: 270px;
+  }
+}
+.feature-list__text {
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .feature-list__text {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-list__text {
     max-width: 270px;
   }
 }
