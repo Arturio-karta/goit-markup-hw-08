@@ -3,28 +3,31 @@
     padding-bottom: 60px;
     background-color: #2f303a;
     &-contact {
-         display: flex;
-    text-align: center;
-    justify-content: space-around;
-    text-align: left;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
         @media screen and (min-width: 768px) {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            text-align: left;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
            flex-direction: row;
 
         }
         @media screen and (min-width: 1200px) {
+            align-items: baseline;
+            justify-content: space-between;
         }
         
     }
     &-one {
+       margin-bottom: 60px;
         @media screen and (min-width: 768px) {
+            margin-bottom: 0;
             text-align: left;
         }
         @media screen and (min-width: 1200px) {
             margin-left: 0;
-            margin-right: 70px;
             text-align: left;
         }
     }
