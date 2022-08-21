@@ -30,13 +30,14 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-  
     @media screen and (min-width: 480px) {
+        width: 360px;
         max-height: 84px;
         font-size: 26px;
         line-height: 42px;
     }
     @media screen and (min-width: 1200px) {
+        width: 696px;
           font-size: 44px;
     line-height: 1.36;
     margin-bottom: 60px;
